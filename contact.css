@@ -1,0 +1,197 @@
+@charset "UTF-8";
+@font-face {
+	src:url("fonts/ChokoMilky.tff");
+	font-family:"choko milky";
+}
+  body{
+    margin:0;
+    padding:0;
+    background:url("images/contact head.png");
+    background-size:100%;
+  }
+  .head{
+    background: url("images/ABM Photography-58.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 300px;
+  }
+  #header{
+    display:flex;
+    top:0;
+    position:fixed;
+    width:100%;
+    z-index: 500;
+    transition:.4s all ease;
+  }
+  .logo img{
+    width:40%;
+  }
+  .logo, .navbar{
+    width:30%;
+  }
+  .navbar{
+    padding-left:35vw;
+    margin-top:5vh;
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+  }
+  li a{
+    padding:.5vw 0px 0px 2vw;
+    text-decoration: none;
+    color:#b40301;
+    font-size:2.5vw;
+    font-family:"choko milky";
+    transition:.2s all ease;
+  }
+  a:hover{
+    filter:opacity(30%);
+  }
+  .dropbtn {
+    background:none;
+    color: black;
+    font-size: 2.5vw;
+    border: none;
+    cursor: pointer;
+    font-family:"choko milky";
+    padding-left:2.4vw;
+  }
+  
+  .dropbtn:focus {
+    outline:none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background:none;
+    width: 260px;
+    overflow: auto;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  font-size:2vw;
+  }
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
+  hr{
+    border:none;
+    height:3px;
+    background:red;
+    margin-left:10%;
+  }
+.container1 h2{
+  position: absolute;
+  margin:5% 0px 0px 44%;
+  text-align:center;
+  font-family:"choko milky";
+  font-size:3.5vw;
+}
+.contact-form{
+  text-align: center;
+}
+form{
+    margin-top:10%;
+}
+form input{
+  font-size:1.4vw;
+  border:none;
+  margin-bottom:2%;
+  border-bottom:1px solid red;
+  background: none;
+  width:42%;
+  color:black;
+  padding:.8%;
+}
+form input:focus{
+  background:yellow;
+  outline:none;
+}
+form input::placeholder{
+  color:black;
+}
+textarea{
+  font-size:1.4vw;
+  border:1px solid red;
+  border-top:none;
+  background: none;
+  color:black;
+    width:44%;
+}
+textarea::placeholder{
+  color:black;
+  fonr-size:1.4vw;
+}
+textarea:focus{
+  background: yellow;
+  outline:none;
+}
+p1{
+  padding:30px;
+  font-size:2vw;
+}
+.branches{
+  display:block;
+    text-align: left;
+    margin-top:5%;
+}
+.branches h2{
+  text-align: center;
+  font-size:3.5vw;
+  font-family:"choko milky"
+}
+iframe{
+  border:1px solid yellow;
+  margin:2% 0px 0px 22%;
+  width:60%;
+  box-shadow:0.5px 0.9px 30px;
+}
+.restaurant{
+  margin-top:6 %;
+  box-sizing: border-box;
+  display: flex;
+}
+.restaurant img{
+  width:85%;
+  margin:3.4%;
+  box-shadow:0.5px 0.9px 30px;
+}
+.call{
+  margin-top:6%;
+}
+h3{
+  text-align: center;
+  font-size:3.5vw;
+  font-family:"choko milky"
+}
+.cnts{
+    margin-left:5%;
+    color:red;
+}
+.footer{
+	background:none;
+	display:flex;
+}
+.footer img{
+	width:60%;
+}
+.social{
+	margin-left:70%;
+  display:flex;
+}
+.social img{
+	width:40px;
+	padding:10px;
+}

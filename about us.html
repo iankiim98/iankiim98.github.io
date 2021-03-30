@@ -1,0 +1,110 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="about us.css">
+    <link rel="stylesheet" href="about mobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="shortcut icon" type="IMAGES/png" href="images/logo.png">
+    <title>About us</title>
+  </head>
+  <body>
+    <div class="header">
+      <img class="headr" src="images/ABM Photography-6.jpg">
+      <div id="header">
+        <div class="logo"><img src="images/logo.png" id="logo"></div>
+        <div class="navbar">
+          <nav>
+            <ul>
+              <li><a id="color" href="index.html">Home</a></li>
+              <li><a id="colo" href="about us.html">About</a></li>
+              <li><a id="col" href ="contact.html">Contact</a></li>
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">More;</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="pro-pho.html">Menu</a>
+                  <a href="bra-pho.html">Profile</a> 
+                </div>
+              </div>
+            </ul>
+          </nav>
+        </div>
+    </div>
+      </div>
+      <script>
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+      <div class="contain">
+      <div class="container1">
+        <h1>About us</h1>
+        <div class="box">
+            <p1>The ChickenRun fast food was established in 2009. By 2011, ChickenRun was located exclusively 
+              at its standalone outlets; Kahawa Sukari and Parklands, Nairobi. Since then, the number of outlets 
+              has increased to a total of 11 shops city wide. In the year 2018 ChickenRun grew its operations into 
+              Eldoret town, Uasin Gishu County, malls and business districts of major towns in Kenya. 
+              Additionally, we also operate a pizza sub franchise in all Tuskys supermarket nationwide. With this 
+              in mind, ChickenRun has risen in the fast-paced environment with the several outlets and will be a 
+              household name in terms of its products and services.</p1>
+          </div>
+          <div><img src="images/ABM Photography-33-cutout.png"></div>
+      </div>
+        <div class="container2">
+          <h1>Market</h1>
+            <div><img src="images/ABM Photography-44-cutout.png"></div>
+              <div class="box">
+                  <p1>We are dedicated to growing our brand and driving sales within all our partner restaurant sites 
+                    through the use of a number of different ChickenRun marketing strategies. All these are analysed 
+                    and monitored to ensure eectiveness to achieve the brand strategic objectives. All design and 
+                    concepts are ran through our marketing department to ensure that the product, concept, deal and 
+                    design confirms to the brand method and corporate guidelines.</p1>
+                  </div>
+          </div>
+            <div class="container3">
+                <h2>Call Us: +254 7XXXXXXX</h2>
+                <h2>Email Us: name@email.com</h2><br>
+                <img src="images/ABM Photography-88-cutout.png">
+            </div>
+            <div class="footer">
+              <div class="logo"><img src="images/logo.png"></div>
+              <div class="social">
+                <img src="images/f2.PNG">
+                <img src="images/i2.PNG">
+                <img src="images/t2.png">
+                <img src="images/in2.PNG">
+              </div>
+            </div>
+        </div>
+        <script>
+          window.onscroll = function() {scrollFunction()};
+          function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+              document.getElementById("header").style.background = "#b40301";
+              document.getElementById("color").style.color = "yellow";
+              document.getElementById("colo").style.color = "yellow";
+              document.getElementById("col").style.color = "yellow";
+            }
+            else{
+              document.getElementById("header").style.background = "none";
+              document.getElementById("color").style.color = "#b40301";
+              document.getElementById("col").style.color = "#b40301";
+              document.getElementById("colo").style.color = "#b40301";
+            }
+          }
+        </script>
+  </body>
+</html>
