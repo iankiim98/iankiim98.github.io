@@ -205,7 +205,6 @@
         width:45%;
         position:absolute;
         margin-left:5%;
-        align-items:flex-start;
       }
       .pizzone, .pizztwo, .pizzthree{
         position:absolute;
@@ -214,17 +213,14 @@
       .pizzone{
       margin:52% 0px 0px 1%;
       width:28%;
-      align-items:flex-start;
       }
       .pizztwo{
         margin:60% 0px 0px 35%;
         width:28%;
-        align-items:flex-start;
       }
       .pizzthree{
         margin:3% 0px 0px 33%;
         width:28%;
-        align-items:flex-start;
       }
       .prices{
         margin-left:50%;
@@ -232,7 +228,6 @@
       .prc{
         width:27%;
         margin-left:12%;
-        align-items:flex-start;
         z-index:400;
       }
       h4{
@@ -258,7 +253,8 @@
       }
       .container{
         display:flex;
-        margin:2% 0px 0px 7%;  
+        margin:2% 0px 0px 7%; 
+        align-items: flex-start; 
       }
       .container img{
         width:40%;
