@@ -4,7 +4,7 @@
         overflow-x: hidden !important;
     }
     .loader > img{
-        width:30%;
+        width:15% !important;
     } 
       .txxt{
         margin:15% 0px 0px -72%;
@@ -17,23 +17,41 @@
       }
     }
 @media screen and (max-width:800px){
-    .navbar{
-        position:fixed;
-        background:yellow;
-        top:0;
-        left:0;
-        width:100%;
-        height:0;
-        opacity:0;
-        visibility:hidden;
-        transition: opacity .35s, visibility .35s, height .35s;
-        overflow:hidden;
-    }
-
+.mainMenu{
+    height: 100vh;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index:10;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background:yellow;
+    transition: top 1s ease;
+    display:none;
+}
+.mainMenu .closeMenu{
+    display:block;
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+.fa{
+    color:yellow;
+}
+nav .openMenu{
+    display:block;
+}
+nav .mainMenu li a:hover{
+    background:none;
+    color:maroon;
+    font-size:1.6rem; 
+}
 }
 @media screen and (max-width:484px){
       .loader > img{
-        width:120%;
+        width:40%;
       }
       .main-container{
         background:url("images/backie.svg");
@@ -53,21 +71,22 @@
         width:70%;
       }
       .logo, .navbar{
-        width:30%;
+        width:40%;
       }
       .navbar{
-        padding-left:35vw;
-        margin-top:5vh;
+        padding-left:0;
+        margin-left:-14%;
+        margin-top:2.5vh;
       }
       nav ul{
         display: flex;
         list-style: none;
       }
       li a{
-        padding:.5vw 0px 0px 2vw;
+        padding:.5vw 0px 0px 4vw;
         text-decoration: none;
         color:rgb(255, 255, 0);
-        font-size:2.5vw;
+        font-size:5.5vw;
         font-family:"choko milky";
         transition:.2s all ease;
       }
@@ -77,11 +96,11 @@
       .dropbtn {
         background:none;
         color: black;
-        font-size: 2.5vw;
+        font-size: 5.5vw;
         border: none;
         cursor: pointer;
         font-family:"choko milky";
-        padding-left:2.4vw;
+        padding-left:2.8vw;
       }
       
       .dropbtn:focus {
@@ -95,19 +114,18 @@
       
       .dropdown-content {
         display: none;
-        position: absolute;
-        background:none;
+        background:yellow;
         width: 260px;
         overflow: auto;
-        z-index: 1;
+        z-index: 1000;
       }
       
       .dropdown-content a {
-        color: black;
+        color:red;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-      font-size:2vw;
+      font-size:4vw;
       }
       
       .dropdown a:hover {background-color: #ddd;}
@@ -119,7 +137,7 @@
         text-align:center;
       }
       .left{
-        margin-top:10vh;
+        margin:10vh 0px 0px -4vw;
         padding:10px;
       }
       .nt{
@@ -156,9 +174,9 @@
       }
       .txxt{
         width:110%;
-        margin:14% 0px 0px -150%;
+        margin:12% 0px 0px -160%;
         font-size:4vw;
-        color:rgb(0, 0, 0);
+        color:rgb(255, 255, 255);
       }
       .mascot img{
         padding:3vw;
@@ -167,7 +185,7 @@
       }
       .containerthree{
         background:rgb(255, 255, 0);
-        text-align center;
+        text-align: center;
         display:flex;
         padding-bottom:10vh;
       }
@@ -294,30 +312,313 @@
         width:90%;
         font-size:3.3vw;
         margin-left:0vw;
-        margin-top:1vh;
+        margin-top:6vh;
         color:white;
       }
       .conimg img{
-        width:40%;
-        margin-top:1vh;
-        padding-left:35vw;
+        width:75%;
+        margin-top:5vh;
+        padding-left:32vw;
       }
       .footer{
           background:#b40301;
           display:flex;
       }
       .footer img{
-          width:100%;
+          width:60%;
       }
       .social{
-          margin-left:25%;
-        display:flex;
-      }
-      .social img{
-          width:30px;
-          height:30px;
-          padding:10px;
-          align-items:flex-start;
-      }
-      
+          margin:7% 0px 0px 21%;
+      }    
+      .fa{
+        font-size:4.5vw !important;
+        padding:10px;
+      } 
 }     
+@media screen and (max-width:360px){
+  .social{
+    margin-left:13%;
+  }
+}
+@media screen and (max-width:1024px) and (min-width:750px) and (orientation: portrait){
+  .main-container{
+    background:url("images/backie.svg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    height:100vh;
+  }
+  #header{
+    display:flex;
+    top:0;
+    position:fixed;
+    width:100%;
+    z-index: 500;
+    transition:.4s all ease;
+  }
+  .logo img{
+    width:70%;
+  }
+  .logo, .navbar{
+    width:30%;
+  }
+  .navbar{
+    padding-left:20vw;
+    margin-top:5vh;
+  }
+  nav ul{
+    display: flex;
+    list-style: none;
+  }
+  li a{
+    padding:.5vw 0px 0px 2vw;
+    text-decoration: none;
+    color:rgb(255, 255, 0);
+    font-size:4.5vw;
+    font-family:"choko milky";
+    transition:.2s all ease;
+  }
+  a:hover{
+    filter:opacity(30%);
+  }
+  .dropbtn {
+    background:none;
+    color: black;
+    font-size: 4.5vw;
+    border: none;
+    cursor: pointer;
+    font-family:"choko milky";
+    padding-left:2.4vw;
+  }
+  
+  .dropbtn:focus {
+    outline:none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background:none;
+    width: 260px;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  font-size:2vw;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  .headertwo{
+    display:block;
+    box-sizing: border-box;
+    text-align:center;
+  }
+  .left{
+    margin:10vh 0px 0px -4vw;
+    padding:10px;
+  }
+  .nt{
+    width:56%;
+  }
+  .center img{
+    margin-left:0%;
+    width:60%;
+    filter:drop-shadow(3px 5px 10px);
+  }
+  .right{
+    text-align:right;
+    margin-top:-50vh;
+  }
+  .right ul{
+    list-style: none;
+  }
+  .right img{
+    width:10%;
+    padding-bottom:7vh;
+  }
+  .left .center .right{
+    width:30%;
+  }
+  .containertwo{
+    display:flex;
+    background:url("images/backie2.svg");
+    background-size:95%;
+    height:70%;
+    margin-top:0vh;
+    padding-bottom:5vh;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+  .txxt{
+    width:110%;
+    margin:6% 0px 0px -60%;
+    font-size:4vw;
+    color:rgb(255, 255, 255);
+  }
+  .mascot img{
+    padding:3vw;
+    width:30%;
+    margin-top:5vh;
+  }
+  .containerthree{
+    background:rgb(255, 255, 0);
+    text-align: center;
+    display:flex;
+    padding-bottom:10vh;
+  }
+  .look{
+      text-align:right;
+  }
+  .look img{
+    width:95%;
+  }
+  .conthr{
+    margin:0% 0px 0px 10%;
+  }
+  p2{
+      font-size:3vw;
+  }
+  h2{
+    font-size:7vw;
+    text-align:center;
+    padding-top:11%;
+    font-family:"choko milky";
+  }
+  h3{
+    text-align:center;
+    padding-top:2%;
+    font-family:"choko milky";
+    font-size:7vw !important;
+  }
+  .containerfour{
+    background:#b40301;
+    padding-bottom:5vh;
+    margin-top:-8vh;
+  }
+  .pizza{
+    width:45%;
+    position:absolute;
+    margin-left:5%;
+  }
+  .pizzone, .pizztwo, .pizzthree{
+    position:absolute;
+    width:8%;
+  }
+  .pizzone{
+  margin:52% 0px 0px 1%;
+  width:28%;
+  }
+  .pizztwo{
+    margin:60% 0px 0px 35%;
+    width:28%;
+  }
+  .pizzthree{
+    margin:3% 0px 0px 33%;
+    width:28%;
+  }
+  .prices{
+    margin-left:50%;
+  }
+  .prc{
+    width:27%;
+    margin-left:12%;
+    z-index:400;
+  }
+  h4{
+    text-align:center;
+    font-size:7vw;
+    color:yellow;
+  }
+  h5{
+    text-align:center;
+    font-size:7vw;
+    color:yellow;
+    margin-top:-3vh; 
+  }
+  span{
+    color:white;
+  }
+  h6{
+    text-align:center;
+    font-size:5.5vw;
+    font-family:"comic sans ms";
+    margin-top:-4vh;
+    transform:rotate(11deg);
+  }
+  .container{
+    display:flex;
+    margin:2% 0px 0px 7%; 
+    align-items: flex-start; 
+  }
+  .container img{
+    width:40%;
+    font-family:"choko milky";
+    padding:2%;
+    align-items: flex-start;
+  }
+  .containerfive{
+    display:block !important;
+  }
+  .containerfive img{
+    width:95%;
+    margin:1.4%;
+  }
+  .containersix{
+    display:block;
+    background:#b40301;
+  }
+  .containersix .consix img{
+    width:80%;
+    padding:5%;
+  }
+  .vid img{
+    width:100%;
+  }
+  .containernine{
+    display:block;
+    margin:-5vh 0px 10vh 0px;
+    background:url("images/backie2.svg");
+    background-size:95%;
+    height:auto;
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+  .conclusion{
+    padding:18vh 0px 3% 5vw;
+    width:90%;
+    font-size:3.3vw;
+    margin-left:0vw;
+    margin-top:15vh;
+    color:white;
+  }
+  .conimg img{
+    width:75%;
+    margin-top:5vh;
+    padding-left:32vw;
+  }
+  .footer{
+      background:#b40301;
+      display:flex;
+  }
+  .footer img{
+      width:50%;
+  }
+  .social{
+      margin:5% 0px 0px 45%;
+  }    
+  .fa{
+    font-size:3vw;
+    padding:10px;
+  }
+}

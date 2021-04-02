@@ -16,14 +16,14 @@ body{
   transition: .4s all ease;
 }
 .logo img{
-  width:40%;
+  width:30%;
 }
 .logo, .navbar{
   width:30%;
 }
 .navbar{
   padding-left:35vw;
-  margin-top:5vh;
+  margin-top:3.5vh;
 }
 nav ul{
   display: flex;
@@ -128,13 +128,12 @@ h2{
 	display:flex;
 }
 .footer img{
-	width:60%;
+	width:30%;
 }
-.social{
-	margin-left:70%;
-  display:flex;
+ .social{
+	margin-left:45%;
 }
-.social img{
-	width:40px;
-	padding:10px;
+.fa{
+padding:20px;
+color:maroon;
 }

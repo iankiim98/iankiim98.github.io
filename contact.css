@@ -24,14 +24,14 @@
     transition:.4s all ease;
   }
   .logo img{
-    width:40%;
+    width:30%;
   }
   .logo, .navbar{
     width:30%;
   }
   .navbar{
     padding-left:35vw;
-    margin-top:5vh;
+    margin-top:3.5vh;
   }
   nav ul{
     display: flex;
@@ -89,7 +89,7 @@
   hr{
     border:none;
     height:3px;
-    background:red;
+    background:#ff0000;
     margin-left:10%;
   }
 .container1 h2{
@@ -109,22 +109,22 @@ form input{
   font-size:1.4vw;
   border:none;
   margin-bottom:2%;
-  border-bottom:1px solid red;
+  border-bottom:1px solid #ff0000;
   background: none;
   width:42%;
-  color:black;
+  color:#000000;
   padding:.8%;
 }
 form input:focus{
-  background:yellow;
+  background:#ffff00;
   outline:none;
 }
 form input::placeholder{
-  color:black;
+  color:#000000;
 }
 textarea{
   font-size:1.4vw;
-  border:1px solid red;
+  border:1px solid #ff0000;
   border-top:none;
   background: none;
   color:black;
@@ -132,10 +132,9 @@ textarea{
 }
 textarea::placeholder{
   color:black;
-  fonr-size:1.4vw;
 }
 textarea:focus{
-  background: yellow;
+  background: #ffff00;
   outline:none;
 }
 p1{
@@ -153,13 +152,13 @@ p1{
   font-family:"choko milky"
 }
 iframe{
-  border:1px solid yellow;
+  border:1px solid #ffff00;
   margin:2% 0px 0px 22%;
   width:60%;
   box-shadow:0.5px 0.9px 30px;
 }
 .restaurant{
-  margin-top:6 %;
+  margin-top:6%;
   box-sizing: border-box;
   display: flex;
 }
@@ -178,20 +177,19 @@ h3{
 }
 .cnts{
     margin-left:5%;
-    color:red;
+    color:#ff0000;
 }
 .footer{
 	background:none;
 	display:flex;
 }
 .footer img{
-	width:60%;
+	width:30%;
 }
-.social{
-	margin-left:70%;
-  display:flex;
+ .social{
+	margin-left:45%;
 }
-.social img{
-	width:40px;
-	padding:10px;
+.fa{
+padding:20px;
+color:#800000;
 }

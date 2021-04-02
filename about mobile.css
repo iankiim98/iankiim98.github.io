@@ -1,0 +1,227 @@
+@charset "UTF-8";
+@media screen and (max-width:991px){
+    .social{
+        margin-left:60%;
+    }
+}
+@media screen and (max-width:767px){
+    .social{
+        margin-left:55%;
+    }
+    .social img{
+        width:30px;
+        padding:10px;
+    }
+}
+@media screen and (max-width:484px){
+    .header{
+        background:url("images/ABM Photography-6.jpg");
+        background-repeat:no-repeat;
+        background-size:100%;
+        height:35%;
+      }
+      #logo{
+        width:100px;
+        transition: 0.4s;
+      }
+      #header{
+        display:flex;
+        margin-left:0%;
+        transition: 0.4s;
+      }
+      .logo img{
+        width:70%;
+      }
+      .logo, .navbar{
+        width:40%;
+      }
+      .navbar{
+        padding-left:0;
+        margin-left:-14%;
+        margin-top:2.5vh;
+      }
+      nav ul{
+        display: flex;
+        list-style: none;
+      }
+      li a{
+        padding:.5vw 0px 0px 4vw;
+        text-decoration: none;
+        color:rgb(255, 255, 0);
+        font-size:5.5vw;
+        font-family:"choko milky";
+        transition:.2s all ease;
+      }
+      .dropbtn {
+        background:none;
+        color: black;
+        font-size: 5.5vw;
+        border: none;
+        cursor: pointer;
+        font-family:"choko milky";
+        padding-left:2.8vw;
+      }
+      h1{
+        font-family:"choko milky";
+        font-size:7vw;
+        text-align:center;
+        margin-top:0%;
+      }
+      .contain{
+        background: url("images/phone/contact head.png");
+        background-size:100%;
+        margin-top:-5%;
+      }
+      .box{
+        margin:7% 0px 0px 0%;
+        width:100%;
+      }
+      .container1 img{
+        width:40%;
+        margin:60% 0px 0px 50%;
+      }
+      .container2 img{
+        margin-top:40%;
+        width:40%;
+        margin-left:10%;
+      }
+      p1{
+        font-size:4vw;
+      }
+      .container2 .box{
+        margin:-70% 0px 0px 0%;
+      }
+      h2{
+        font-size:4.3vw;
+        margin:3%;
+        text-align:left;
+      }
+      .container3{
+        text-align:center;
+      }
+      .container3 img{
+        width:30%;
+      }
+      .footer{
+        background:none;
+        display:flex;
+    }
+    .footer img{
+        width:60%;
+    }
+    .social{
+        margin:7% 0px 0px 21%;
+    }    
+    .fa{
+      font-size:4.5vw !important;
+      padding:10px;
+    }
+    }
+    @media screen and (max-width:380px){
+      .social{
+        margin-left:20%;
+      }
+    }
+    @media screen and (max-width:360px){
+      .social{
+        margin-left:13%;
+      }
+    }
+    @media screen and (max-width:1024px) and (min-width:750px) and (orientation:portrait){
+      .header{
+        background:url("images/ABM Photography-6.jpg");
+        background-repeat:no-repeat;
+        background-size:100%;
+        height:35%;
+      }
+      .logo img{
+        width:70%;
+      }
+      .logo, .navbar{
+        width:30%;
+      }
+      .navbar{
+        padding-left:20vw;
+        margin-top:5vh;
+      }
+      nav ul{
+        display: flex;
+        list-style: none;
+      }
+      li a{
+        padding:.5vw 0px 0px 2vw;
+        text-decoration: none;
+        color:rgb(255, 255, 0);
+        font-size:4.5vw;
+        font-family:"choko milky";
+        transition:.2s all ease;
+      }
+      a:hover{
+        filter:opacity(30%);
+      }
+      .dropbtn {
+        background:none;
+        color: black;
+        font-size: 4.5vw;
+        border: none;
+        cursor: pointer;
+        font-family:"choko milky";
+        padding-left:2.4vw;
+      }
+      h1{
+        font-family:"choko milky";
+        font-size:7vw;
+        text-align:center;
+        margin-top:0%;
+      }
+      .contain{
+        background: url("images/phone/contact head.png");
+        background-size:100%;
+        margin-top:-5%;
+      }
+      .box{
+        margin:7% 0px 0px 0%;
+        width:100%;
+      }
+      .container1 img{
+        width:40%;
+        margin:40% 0px 0px 50%;
+      }
+      .container2 img{
+        margin-top:40%;
+        width:40%;
+        margin-left:10%;
+      }
+      p1{
+        font-size:4vw;
+      }
+      .container2 .box{
+        margin:-70% 0px 0px 0%;
+      }
+      h2{
+        font-size:4.3vw;
+        margin:3%;
+        text-align:left;
+      }
+      .container3{
+        text-align:center;
+      }
+      .container3 img{
+        width:30%;
+      }
+      .footer{
+        background:none;
+        display:flex;
+    }
+    .footer img{
+        width:50%;
+    }
+    .social{
+        margin:5% 0px 0px 45%;
+    }    
+    .fa{
+      font-size:3vw;
+      padding:10px;
+    }
+    }
+    

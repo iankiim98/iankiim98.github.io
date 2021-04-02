@@ -1,4 +1,7 @@
 @charset "UTF-8";
+*{
+  box-sizing: border-box;
+}
 body{
   margin:0;
   padding: 0;
@@ -17,14 +20,16 @@ body{
   align-items: center;
 }
 .loader > img{
-  width:20%;
+  width:120px !important;
 }
 
 .loader .hidden{
   animation:fadeOut 1s;
   animation-fill-mode:forwards;
 }
-
+.myNav .icon{
+  display:none;
+}
 @keyframes fadeOut{
   100%{
     opacity:0;
@@ -37,6 +42,7 @@ body{
   background-size:100%;
   overflow-x: hidden;
 }
+
 #header{
   display:flex;
   top:0;
@@ -47,14 +53,17 @@ body{
   overflow-x: hidden;
 }
 .logo img{
-  width:40%;
+  width:30%;
 }
 .logo, .navbar{
   width:30%;
 }
+nav{
+  justify-content: space-between;
+}
 .navbar{
   padding-left:35vw;
-  margin-top:5vh;
+  margin-top:3.5vh;
 }
 nav ul{
   display: flex;
@@ -106,7 +115,6 @@ a:hover{
   display: block;
 font-size:2vw;
 }
-
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
@@ -115,6 +123,7 @@ font-size:2vw;
   box-sizing: border-box;
 }
 .left{
+  width:130%;
   margin-top:50vh;
   padding:10px;
 }
@@ -162,16 +171,16 @@ font-size:2vw;
 }
 .containerthree{
   background:rgb(255, 255, 0);
-  text-align center;
+  text-align: center;
   display:flex;
   padding-bottom:5vh;
   overflow-x: hidden;
 }
 .look img{
-  width:37%;
+  width:50%;
 }
 .conthr{
-  margin:3% 0px 0px 25%;
+  margin:0% 0px 0px 25%;
   font-size:1.6vw;
 }
 h2{
@@ -188,7 +197,7 @@ h3{
 .containerfour{
   background:#b40301;
   padding-bottom:5vh;
-  margin-top:-8vh;
+  margin-top:-2vh;
   overflow-x: hidden;
 }
 .pizza{
@@ -296,13 +305,12 @@ h6{
   overflow-x: hidden;
 }
 .footer img{
-	width:60%;
+	width:30%;
 }
-.social{
-	margin-left:70%;
-  display:flex;
+ .social{
+	margin-left:45%;
 }
-.social img{
-	width:40px;
-	padding:10px;
+.fa{
+padding:20px;
+color:yellow;
 }

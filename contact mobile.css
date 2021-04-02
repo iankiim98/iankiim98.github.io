@@ -1,0 +1,289 @@
+@charset "UTF-8";   
+@media screen and (max-width:991px){
+    .social{
+      margin-left:60%;
+    }
+    }
+    @media screen and (max-width:780px){
+      .container1 h2{
+        margin:3% 0px 0px 44%;
+      }
+      form{
+          margin-top:4%;
+      }
+      form input{
+        font-size:2vw;
+        width:50%;
+      }
+      textarea{
+        font-size:2vw;
+          width:52%;
+      }
+      textarea::placeholder{
+        color:black;
+      }
+      iframe{
+        margin:2% 0px 0px 16%;
+        width:70%;
+      }
+      .restaurant img{
+        width:25%;
+        margin:3.4%;
+        box-shadow:0.5px 0.9px 30px;
+      }
+      .footer img{
+        width:100px;
+      }
+      .social{
+        margin-left:50%;
+        display:flex;
+      }
+      .social img{
+        width:35px;
+        height:40px;
+        padding:10px;
+      }
+    }
+    @media screen and (max-width:484px){
+        body{
+          margin:0;
+          padding:0;
+          background:url("images/phone/contact head.png");
+          background-size:100%;
+        }
+        .head{
+          background: url("images/phone/ABM Photography-58.jpg");
+          background-repeat: no-repeat;
+          background-size: 100%;
+          padding-bottom: 300px;
+        }
+        #header{
+            display:flex;
+            margin-left:0%;
+            transition: 0.4s;
+        }
+      .navbar{
+        padding-left:0;
+        margin-left:-14%;
+        margin-top:2.5vh;
+      }
+      .logo img{
+        width:70%;
+      }
+      .logo, .navbar{
+        width:40%;
+      }
+      .dropbtn {
+        background:none;
+        color: black;
+        font-size: 5.5vw;
+        border: none;
+        cursor: pointer;
+        font-family:"choko milky";
+        padding-left:2.8vw;
+      }
+        nav ul{
+          display: flex;
+          list-style: none;
+        }
+        li a{
+          padding:.5vw 0px 0px 4vw;
+          text-decoration: none;
+          color:rgb(255, 255, 0);
+          font-size:5.5vw;
+          font-family:"choko milky";
+          transition:.2s all ease;
+        }
+      .container1 h2{
+        font-size:6vw;
+        text-align: center;
+      }
+      form input{
+        font-size:3.4vw;
+        margin-bottom:2%;
+        width:70%;
+        padding:1%;
+      }
+      textarea{
+        font-size:3.4vw;
+          width:72%;
+      }
+      textarea::placeholder{
+        color:black;
+      }
+      p1{
+        font-size:4vw;
+      }
+      iframe{
+        width:75%;
+        height:40%;
+        margin:2% 0px 0px 13%;
+      }
+      .restaurant{
+        display: block;
+        text-align: center;
+      }
+      .restaurant img{
+        width:75%;
+        margin:3.4%;
+        box-shadow:0.5px 0.9px 30px;
+      }
+      .call{
+        margin-top:6%;
+      }
+      .branches h2{
+        font-size: 6vw;
+      }
+      h3{
+        text-align: center;
+        font-size:6vw;
+        font-family:"choko milky"
+      }
+      .cnts{
+          margin-left:1%;
+          color:black;
+      }
+      .footer{
+        background:none;
+        display:flex;
+    }
+    .footer img{
+        width:60%;
+    }
+    .social{
+        margin:7% 0px 0px 22%;
+    }    
+    .fa{
+      font-size:4.5vw !important;
+      padding:10px;
+    }
+    }
+    @media screen and (max-width:360px){
+      .social{
+        margin-left:13%;
+      }
+    }
+    @media screen and (max-width:360px){
+      .social{
+        margin-left:18%;
+      }
+      .social img{
+        width:20px;
+        height:30%;
+        padding:10px;
+      }
+    }
+    @media screen and (max-width:1024px) and (min-width:750px) and (orientation:portrait){
+      body{
+        margin:0;
+        padding:0;
+        background:url("images/phone/contact head.png");
+        background-size:100%;
+      }
+      .head{
+        background: url("images/phone/ABM Photography-58.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-bottom: 750px;
+      }
+      #header{
+          display:flex;
+          margin-left:0%;
+          transition: 0.4s;
+      }
+    .navbar{
+      padding-left:20vw;
+      margin-top:5vh;
+    }
+    .logo img{
+      width:70%;
+    }
+    .logo, .navbar{
+      width:30%;
+    }
+    .dropbtn {
+      background:none;
+      color: black;
+      font-size: 4.5vw;
+      border: none;
+      cursor: pointer;
+      font-family:"choko milky";
+      padding-left:2.4vw;
+    }
+      nav ul{
+        display: flex;
+        list-style: none;
+      }
+      li a{
+        padding:.5vw 0px 0px 2vw;
+        text-decoration: none;
+        color:rgb(255, 255, 0);
+        font-size:4.5vw;
+        font-family:"choko milky";
+        transition:.2s all ease;
+      }
+    .container1 h2{
+      font-size:6vw;
+      text-align: center;
+    }
+    form input{
+      font-size:3.4vw;
+      margin-bottom:2%;
+      width:70%;
+      padding:1%;
+    }
+    textarea{
+      font-size:3.4vw;
+        width:72%;
+    }
+    textarea::placeholder{
+      color:black;
+    }
+    p1{
+      font-size:4vw;
+    }
+    iframe{
+      width:75%;
+      height:40%;
+      margin:2% 0px 0px 13%;
+    }
+    .restaurant{
+      display: block;
+      text-align: center;
+    }
+    .restaurant img{
+      width:75%;
+      margin:3.4%;
+      box-shadow:0.5px 0.9px 30px;
+    }
+    .call{
+      margin-top:6%;
+    }
+    .branches h2{
+      font-size: 6vw;
+    }
+    h3{
+      text-align: center;
+      font-size:6vw;
+      font-family:"choko milky"
+    }
+    .cnts{
+        margin-left:1%;
+        color:black;
+    }
+    .footer{
+      background:none;
+      display:flex;
+  }
+  .footer img{
+      width:50%;
+  }
+  .social{
+      margin:5% 0px 0px 45%;
+  }    
+  .fa{
+    font-size:3vw;
+    padding:10px;
+  }
+    }
+    
