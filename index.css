@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "choko milky";
+  src: url("ChokoMilky.ttf");
+}
 *{
   box-sizing: border-box;
 }
@@ -19,10 +23,9 @@ body{
   justify-content: center;
   align-items: center;
 }
-.loader > img{
-  width:120px !important;
+.loade{
+  width:30%;
 }
-
 .loader .hidden{
   animation:fadeOut 1s;
   animation-fill-mode:forwards;
@@ -249,13 +252,15 @@ h6{
 }
 .container{
   display:flex;
-  margin:2% 0px 0px 22%; 
-  overflow-x: hidden; 
+  margin:2% 0px 0px -4%; 
+  overflow-x: hidden;
+  justify-content: center;
 }
-.container img{
-  width:30%;
+.container a{
+  width:25%;
   font-family:"choko milky";
-  padding:2%;
+  padding:1%;
+  
 }
 .containerfive{
   box-sizing:border-box;

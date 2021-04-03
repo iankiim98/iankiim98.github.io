@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "choko milky";
+  src: url("ChokoMilky.ttf");
+}
 body{
   margin:0;
   padding:0;

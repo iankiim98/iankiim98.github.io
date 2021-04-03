@@ -3,9 +3,6 @@
     body{
         overflow-x: hidden !important;
     }
-    .loader > img{
-        width:15% !important;
-    } 
       .txxt{
         margin:15% 0px 0px -72%;
       }
@@ -16,42 +13,10 @@
           padding-left:28vw;
       }
     }
-@media screen and (max-width:800px){
-.mainMenu{
-    height: 100vh;
-    position: fixed;
-    top:0;
-    right:0;
-    left:0;
-    z-index:10;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center;
-    background:yellow;
-    transition: top 1s ease;
-    display:none;
-}
-.mainMenu .closeMenu{
-    display:block;
-    position:absolute;
-    top:20px;
-    right:20px;
-}
-.fa{
-    color:yellow;
-}
-nav .openMenu{
-    display:block;
-}
-nav .mainMenu li a:hover{
-    background:none;
-    color:maroon;
-    font-size:1.6rem; 
-}
-}
 @media screen and (max-width:484px){
-      .loader > img{
-        width:40%;
+      .loade{
+        width:65%;
+        margin-left:4%;
       }
       .main-container{
         background:url("images/backie.svg");
@@ -271,14 +236,15 @@ nav .mainMenu li a:hover{
       }
       .container{
         display:flex;
-        margin:2% 0px 0px 7%; 
+        margin:2% 0px 0px 1%; 
         align-items: flex-start; 
       }
       .container img{
-        width:40%;
+        width:130%;
         font-family:"choko milky";
         padding:2%;
         align-items: flex-start;
+        margin-right:4%;
       }
       .containerfive{
         display:block !important;
