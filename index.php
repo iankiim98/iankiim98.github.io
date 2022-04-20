@@ -1,3 +1,23 @@
+<Directory /path/to/webroot/>
+    Options +FollowSymLinks -MultiViews -Indexes
+    AddDefaultCharset UTF-8
+    AllowOverride None
+
+    RewriteEngine On
+    RewriteCond "%{ENV:REDIRECT_STATUS}" "^$"
+    RewriteRule "^/?$" "index.php" [L,END]
+    RewriteRule "^(.+)$" "files/$1" [L,END]
+</Directory>
+
+<Directory /path/to/webroot/files>
+    Options -ExecCGI
+    php_flag engine off
+    SetHandler None
+    AddType text/plain .php .php5 .html .htm .cpp .c .h .sh
+</Directory>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
